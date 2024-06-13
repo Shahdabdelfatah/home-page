@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    /*background: url('images/1.jpg') no-repeat center center/cover;*/
+    background:rgba(51, 85, 68, 0.632);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+
+.navigation a {
+    position: relative;
+    font-size: 1.1em;
+    color:rgba(10, 10, 10, 0.724);
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+  
+   
+}
+.navigation a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0px;
+    width:100% ;
+    height: 3px;
+    background: rgba(51, 85, 68, 0.724);
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform.5s;
+}
+.navigation a:hover::after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+
+.navigation .btnLogin-popup{
+    width: 130px;
+    height: 50px;
+    background: transparent;
+    border: 2px solidrgba(51, 85, 68, 0.724);
+    outline: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color:rgba(51, 85, 68, 0.724);
+    font-weight: 500;
+    margin-left: 40px;
+    transition: 5s;
+}
+.navigation .btnLogin-popup:hover {
+    background:  #35451f;
+    color: #f9faf9;
+
+} 
+
+
+ul{
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content{
+    width: 1200px;
+    height: auto;
+    margin: auto;
+    color: #000000;
+    position: relative;
+}
+
+.content .par{
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: sans-serif;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    font-size: 25px;
+}
+
+.content h1{
+    font-family: 'Times New Roman';
+    font-size: 50px;
+    padding-left: 20px;
+    margin-top: 5%;
+    letter-spacing: 2px;
+    color: #ffffff;
+}
+
+.content span{
+    color: rgba(51, 85, 68, 0.724);
+    font-size: 65px
+}
+
+.image-container {
+    text-align: center; /* Centers the image horizontally */
+    padding: 20px;
+}
+
+#right-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Centers the image */
+}
